@@ -1,0 +1,12 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.maxNumberOfProblems": 100,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "99",
+    "--experimental-string-processing"
+  ],
+  "editor.formatOnSave": true,
+  "editor.rulers": [100]
+}
