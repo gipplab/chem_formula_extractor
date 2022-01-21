@@ -1,0 +1,7 @@
+beautifulsoup4==4.10.0
+chemdataextractor2==2.0.1
+fake_useragent==0.1.11
+grobid_client==0.7.1
+grobid_client_python==0.0.2
+lxml==4.7.1
+requests==2.21.0
