@@ -36,7 +36,7 @@ def search_pubchem(
         num_results_used (int, optional): Number of search results to consider. Defaults to 1.
 
     Returns:
-        [type]: [description]
+        List[Tuple[List[str], Dict[str, Any], str]]: List of compounds consisting of: (snyonyms, properties, image)
     """
     compound_list: List[Tuple[List[str], Dict[str, Any], str]] = []
     search_results = pcp.get_compounds(search_term, "name")[0:num_results_used]
@@ -50,5 +50,4 @@ def search_pubchem(
 
 if __name__ == "__main__":
     s = create_session()
-    search_pubchem("water", s)
-    # get_structure_img(962, s)
+    compound = search_pubchem("water", s)

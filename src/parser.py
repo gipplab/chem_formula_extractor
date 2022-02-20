@@ -80,6 +80,8 @@ class TeiXmlReader(LxmlReader):
             if caps
             else Caption("")
         )
+        table = Table(caption, table_data=None)
+        return [table]
 
     def _parse_authors(self, el):
         author_list = []
@@ -165,22 +167,14 @@ class TeiXmlReader(LxmlReader):
             )
         for figure in figures:
             specials[figure] = self._parse_figure(figure, refs=refs, specials=specials)
-        # for table in tables:
-        #    specials[table] = self._parse_table(table, refs=refs, specials=specials)
+        for table in tables:
+            specials[table] = self._parse_table(table, refs=refs, specials=specials)
         # for citation in citations:
         #    specials[citation] = self._parse_text(citation, element_cls=Citation, refs=refs, specials=specials)
         specials[md[0]] = self._parse_metadata(root)
         elements = self._parse_element(root, specials=specials, refs=refs)
         return Document(*elements)
 
-
-namespace = "{http://www.w3.org/XML/1998/namespace}"
-metadata_title_xpath = ".//titleStmt/title"
-metadata_date_xpath = ".//publicationStmt/date"
-metadata_doi_xpath = ".//idno[@type='DOI']"
-headings_xpath = ".//div/head"
-figures_xpath = "//figure[contains(@xml:id, 'fig')]"
-tables_xpath = "//"
 
 if __name__ == "__main__":
     root = clean_xml("acssuschemeng.7b03870.tei.xml")

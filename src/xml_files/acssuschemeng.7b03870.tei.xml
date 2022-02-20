@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Flowerlike Organic−Inorganic Coating Responsible for Extraordinary Corrosion Resistance via Self-assembly of an Organic Compound</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2018-01-18">January 18, 2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Wail</forename><surname>Al</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Materials Science and Engineering</orgName>
+								<orgName type="laboratory">Materials Electrochemistry Laboratory</orgName>
+								<orgName type="institution">Yeungnam University</orgName>
+								<address>
+									<postCode>38541</postCode>
+									<settlement>Gyeongsan</settlement>
+									<country key="KR">Republic of Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Young</forename><forename type="middle">Gun</forename><surname>Ko</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Materials Science and Engineering</orgName>
+								<orgName type="laboratory">Materials Electrochemistry Laboratory</orgName>
+								<orgName type="institution">Yeungnam University</orgName>
+								<address>
+									<postCode>38541</postCode>
+									<settlement>Gyeongsan</settlement>
+									<country key="KR">Republic of Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Flowerlike Organic−Inorganic Coating Responsible for Extraordinary Corrosion Resistance via Self-assembly of an Organic Compound</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2018-01-18">January 18, 2018</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">515DAF2B2F66E9F50681AEB8D2748BF8</idno>
+					<idno type="DOI">10.1021/acssuschemeng.7b03870</idno>
+					<note type="submission">Received: October 25, 2017 Revised: January 13, 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.0" ident="GROBID" when="2021-12-20T10:33+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Organic</term>
+					<term>Inorganic</term>
+					<term>Self-assembly</term>
+					<term>PPC</term>
+					<term>Corrosion resistance</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Organic−inorganic coating has been desirable for practical applications in electrochemistry and analytical science. Up to this investigation, a report of a "flowerlike" structure made from organic components has been rarely reported. Here, we proposed a novel strategy to fabricate the flowerlike hybrid coating through the combination of plasma electrolysis and dip chemical coating in which 4-[4-(phyenylazo)phenylazo]-o-cresol (PPC) was used as the organic component. The formation of organic molecules was initiated effectively on the rough inorganic coating by the charge transfer complexes which facilitate the nucleation of organic molecules. The quantum chemical analysis was implemented to discuss the binding sites activated by PPC. The electrochemical resistance was improved significantly due to the synergistic influences of the inorganic coating via plasma electrolysis and organic coating via self-assembly of PPC.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ INTRODUCTION</head><p>Organic−inorganic coatings are considered to be a promising candidate for a variety of applications related to separations, heterogeneous catalysts, pharmaceuticals, biomedical applications, optoelectronics, and corrosion resistance. 1−5 These materials would combine the unique properties of inorganic components, such as thermal, physical, and chemical stabilities; organic components, such as functionalization and flexibility; and the intrinsic physical and chemical properties of both components. <ref type="bibr" target="#b0">6,</ref><ref type="bibr" target="#b1">7</ref> On the basis of chemistry and electrochemistry, hierarchical strategies to functionalize the surface of materials have been reported. <ref type="bibr" target="#b2">8</ref> Chemical treatment with tartaric acid and 2.6diaminopyridine working as an organic dye on porous materials was reported by means of plasma electrolysis (PE) accompanying dielectric discharge energy. <ref type="bibr">9−12</ref> Interestingly, the functionalization of the porous materials would prevent the adsorption process of aggressive solution as well as trigger the formation of a protective oxide coating on the metal surface. Moreover, the incorporations of various metal oxides, such as MgO, Al 2 O 3 , and TiO 2 , and even their combinations have been investigated via electrophoresis of nanoparticles to enhance corrosion resistance. Among these cases, TiO 2 -incorporated materials exhibit excellent adhesion performance together with excellent chemical stability. <ref type="bibr">13−15</ref> On the other hand, organic molecules were also considered to be promising substances which, in general, contained aromatic rings with nitrogen, oxygen, sulfur, and phosphorus atoms, polar functional groups, and/or conjugated double bonds (delocalized π-electrons). These stabilize the adsorption of organic molecules on top of inorganic materials. <ref type="bibr">16−20</ref> Regions in molecules that possessed nonbonded electrons (free single pairs) and π-electrons in the organic compound preferably donate electrons to the unfilled d-or p-orbitals of light metals.</p><p>The bonding strength of the chemisorbed organic molecules depends primarily upon the electron density arising from the aromaticity and the conjugated double bonds in aromatic rings and the heteroatoms of polar groups and their polarizability. <ref type="bibr">21−25</ref> For instance, the presence of the −NN− group containing nonbonded electrons in azo dye compounds improved adsorption capabilities. The planarity (π-electrons) and free electron pairs of nitrogen atoms as well as chemical stereostructure are significant structural characteristics that governed the adsorption behavior of organic molecules onto the metal surface. The adsorption of organic molecules on the interface between metal and liquid solution was also found to depend on the surface charge of metal, chemical structure, and electronic structure of the organic molecules which were associated with a polar group, steric effect, electron density on heteroatoms, and orbital features of donating electrons. <ref type="bibr">26−29</ref> Here, we considered 4-[4-(phyenylazo)phenylazo]-o-cresol (PCC, hereinafter) as a kind of azo-organic component since this compound might exhibit the excellent ability of corrosion protection due to the formation of coordination complexes between inorganic compounds and azo groups.</p><p>The principal goal of this work is to put forward a hybrid approach to manipulate the f lowerlike organic−inorganic coatings with respect to the concentration of PPC molecule, which has been rarely documented previously. Synergetic influences of inorganic coating with rough surface structure formed by plasma-assisted electrochemical reactions and organic coating formed by self-assembly of PCC molecules on electrochemical stability of AZ31 Mg alloy will be discussed in the context of the equivalent circuit model. In addition, quantum chemical analysis is applied to explain the stability of charge transfer complexes which will determine the interaction between the inorganic surface and PPC molecule.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ EXPERIMENTAL SECTION</head><p>Specimen Preparation and Organic−Inorganic Coating. Specimens of the AZ31 Mg alloy with compositions of 3.08 wt % Al, 0.76 wt % Zn, 0.15 wt % Mn, and balanced Mg were used as substrates in this research. The surface of the specimens was ground and polished with emery papers of 400, 800, and finally 2400 grit, rinsed with deionized water, and then air-dried prior to further treatment. For inorganic coating (IC), the chemical composition and concentration of the present electrolyte were 4 g/L KOH + 8 g/L NaAlO 2 + 4 g/L glycerin together with 8 g/L titanium dioxide (TiO 2 ) and 5 g/L sodium tetraborate decahydrate (Na 2 B 4 O 7 .10H 2 O). The PE method was performed using a 20 kW AC power supply equipped with magnetic-stirring and water-cooling which would maintain a temperature of 288 K to stabilize the plasma-enhanced electrochemical reactions. The constant current density was applied at 100 mA cm −2 , and the specimens were treated for 5 min with a frequency of 50 Hz.</p><p>For dip chemical coating (DCC), the PE-remedied specimens were immersed in an ethanolic solution with various concentrations (1 M (PPC1) and 2 M (PPC2)) of the studied compound for 1 day at 298 K.</p><p>Microstructural Characterization. Microstructural observations of each specimen were observed using scanning electron microscope (SEM, HITACHI, S-4800) provided with energy-dispersive X-ray spectroscopy (EDS, HRIBA EMAX). Transmission electron microscopy (TEM; Philips, CM 200) images were collected at an acceleration voltage of 200 kV. The chemical compounds present in organic and inorganic coatings were examined by X-ray diffraction (XRD, RIGAKU, D-MAX 2500) with a step width of 0.05°and a scan range from 20 to 90°. For functional group analysis, FT-IR spectra (PerkinElmer Spectrum 100) was used in the region 400−4000 cm −1 to determine the polar groups of organic−inorganic materials. The chemical composition of the coating was described via X-ray photoelectron spectroscopy (XPS, VG Microtech, ESCA 2000). For elemental analysis (EA), C, H, and N were examined on a CarloErba 1106 elemental analyzer.</p><p>Electrochemical Measurements. Electrochemical properties were evaluated in aggressive solution (3.5 wt % NaCl) utilizing a conventional three-electrode cell: a specimen with a revealed area of 1 cm 2 as the working electrode, a platinum plate as the counter electrode, and a saturated Ag/AgCl electrode as the reference electrode. The electrochemical properties of the materials were estimated by potentiodynamic polarization and electrochemical impedance tests (Potentiostat, Gamry Instruments, Interface 1000). Potentiodynamic polarization tests were measured from −0.3 to 0.3 V in regards to the open circuit potential (OCP) at a scan rate of 1 mV s −1 . The electrochemical impedance spectroscopy (EIS) was measured from 10 6 to 0.1 Hz at an interlude of 10 points/decade with a 10 mV rms. Repeated experiments for present electrochemistry tests were conducted for each testing condition, and the specimen was substituted at the end of each test.</p><p>Quantum Chemical Analyses. Quantum chemical analysis was performed using the density functional theory (DFT) with B3LYP functional as implemented in the GAMESS program package. <ref type="bibr">30−32</ref> ■ RESULTS AND DISCUSSION Morphological Analysis. The surface morphologies of organic−inorganic coatings obtained after the PE process for fabrication of the IC and chemical remedy for loading the inorganic layer with PPC are presented in Figure <ref type="figure" target="#fig_0">1a</ref>−i. From Figure <ref type="figure" target="#fig_0">1a</ref>−c, TiO 2 particles were spread on the coating surface and solidified and then spread inside the open pores which were considered as uptake pathways for inorganic oxides into PE-treated materials. <ref type="bibr">30−32</ref> As a result, high-resolution SEM images of the IC with TiO 2 (Figure <ref type="figure" target="#fig_0">1c</ref>) exhibited that TiO 2 was located at the porous surface of the IC. Therefore, it is also worth mentioning that TiO 2 particles have negative zeta potential in alkaline media, <ref type="bibr" target="#b25">33,</ref><ref type="bibr" target="#b26">34</ref> and the applied potential could promote the adsorption of inorganic oxides into the IC. On the other hand, flowerlike morphologies of all IC-PPC1 and IC-PPC2 samples after 1 day of immersion in PPC solution are presented in Figure <ref type="figure" target="#fig_0">1d</ref>−i. Concentration-dependent experiments were performed to recognize the morphological growth process of flowerlike PPC. The specimens were collected at various concentrations, and the morphological changes were visualized by SEM images. The initial morphological examination of the prepared flowerlike structures for different concentrations was analyzed by SEM, which displays that the concentration has an important impact on the morphology of PPC. As shown in Figure <ref type="figure" target="#fig_0">1d</ref>−f, for IC-PPC1, the specimen started to fabricate a flowerlike structure and the sheets acted as flower petals sticking out from the middle part of the flower, few sheets or "petals" engaged in the architecture of a flower. At an early stage (Figure <ref type="figure" target="#fig_0">1d</ref>−f, IC-PPC1), primary crystals of organic coating on inorganic surfaces are formed. Herein, PPC molecules form CTCs (charge transfer complexes) with the inorganic surface, mainly through the coordination ability of phenol, azo groups, and aromatic rings in the organic compound. CTCs provide a location for formation of the primary crystals. In the high concentration (Figure <ref type="figure" target="#fig_0">1g</ref>−i), large conglomerates of PPC molecules and primary crystals from CTCs were formed. The kinetically organized growth of PPC crystals emerges at individual titanium and boron compounds and magnesium and aluminate binding sites as well as microdefects on the surface of the IC, causing separate petals to show up in Figure <ref type="figure" target="#fig_0">1d</ref>−f. In these proposed concentrations, anisotropic growth results in whole formation of a forked flowerlike organic structure (Figure <ref type="figure" target="#fig_0">1g</ref>−i, IC-PPC2). Moreover, the inorganic compounds and microdefects in the IC induce the nucleation of PPC to form the scaffold for the petals and serve as a "glue" to strap the petals together. <ref type="bibr" target="#b27">35</ref> On the other hand, the SEM micrograph in Figure <ref type="figure" target="#fig_0">1d</ref>−f shows that the organic layer consisted of a flowerlike hierarchical structure, the diameter was in the range between 6 and 28 μm, and the thickness was approximately 20−25 μm. The structure was  <ref type="figure" target="#fig_1">2a</ref>) in the coating that was treated without PPC were 6.01%, 3.59%, 2.00%, 16.02%, 17.00%, 0.00%, and 57.00%, respectively, while analogous data of the specimens remedied with PCC1 were 0.63%, 0.35%, 0.34%, 15.01%, 74.00%, 2%, and 77.00%, and those for the specimen remedied with PPC2 were 0.08%, 0.02%, 0.01%, 14.74%, 78.64%, 3%, and 79%. The increase in C ratio and the diminished Mg, Al, Ti, and B (Figure <ref type="figure" target="#fig_1">2a</ref>) were assigned to the self-assembly of PPC molecules prepared on the porous surface. These results further confirmed that the flowerlike organic structure had been prepared successfully using the DCC method and would display superior corrosion protection in electrochemical applications. In addition, CHN found for the IC was as follows: C 0.11, H 0.06, N 0. That for IC-PPC1 was the following: C 1.30, H 0.15, N 0.15. That for IC-PPC2 was the following: C 4.06, H 0.44, N 0.78. As a result, the carbon and nitrogen contents gradually increased with PPC amount during the DCC method, which confirmed the successful self-assembly of PPC on the IC.</p><p>FT-IR spectra were measured to investigate the functional groups and the adsorption mechanism of the specimen (Figure <ref type="figure" target="#fig_1">2b</ref>). After chemical treatment of the IC in PPC solutions, the characteristic vibration mode of the NN groups clearly appeared at 1472 cm −1 and the peaks at 3254 cm −1 could be assigned to the O−H stretching frequency of hydroxyl groups, <ref type="bibr" target="#b28">36</ref> while the bands around 1300−1050 cm −1 were due to in-plane bending O−H vibration of the organic dye. <ref type="bibr">37,</ref><ref type="bibr" target="#b29">38</ref> Moreover, the absence of a band in the region ∼3400 cm −1 of free hydroxyl groups was assigned to the presence of the intermolecular hydrogen bonds (O−OH) between the organic molecules. Apparent peaks at ∼2885 cm −1 and ∼2922 cm −1 after adsorption organic compound were assigned to stretching (symmetric and asymmetric) vibrations of CH 3 alkyl. <ref type="bibr" target="#b28">36</ref> XRD diffraction pattern of all specimens are shown (Figure <ref type="figure" target="#fig_1">2c</ref>). The peaks of PPC crystals were noticed at 23.37°, 24.9°, 25.5°, and 26.60°2θ, demonstrating that these flower-shaped structures were an aggregation of PPC crystals. However, the relative peak intensities of MgAl 2 O 4 , MgO, Mg 3 B 2 O 6 , TiO 2 , and Mg diminished after treatment in PPC compared with the relative peak intensities prior to treatment. These results were proven by variations in the relative peak intensities corresponding to PPC (Figure <ref type="figure" target="#fig_1">2c</ref>).</p><p>XPS analysis was performed to determine the surface characteristics and chemical composition in IC, IC-PPC1, and IC-PPC2 composites and also to elucidate the bonding mechanism. As shown in Figure <ref type="figure" target="#fig_1">2d</ref>, the wide-scan XPS spectra of IC, IC-PPC1, and IC-PPC2 show the presence of Mg, Al, Ti, C, and O elements. In order to prove the chemical components of specimens, the wide-scan XPS spectra of the modified specimen was analyzed, as exhibited in Figure <ref type="figure" target="#fig_2">3</ref>. The spectrum (Figure <ref type="figure" target="#fig_1">2d</ref>) of the IC contains Mg, Al, Ti, and O peaks, and the spectrum of the organic−inorganic coating shows Mg, Al, Ti, C, N, and O peaks (Figure <ref type="figure" target="#fig_1">2d</ref>). The narrow-scan spectra of Mg 1s, Al 2p, B 1s, Ti 2p, C 1s, N 1s, and O 1s was obtained to determine the chemical states of the elements and physical interaction between PPC and IC (see Figure <ref type="figure" target="#fig_2">3</ref>). Figure <ref type="figure" target="#fig_2">3</ref> shows the Mg 1s peaks at a binding energy of 1303.7 and 1309.9 eV for IC and IC-PPC2, respectively. <ref type="bibr" target="#b26">34</ref> This shift toward a higher value could be attributed to an atomic dispersion of magnesium alloy on the organic layer or the variation in the coordination value of the magnesium alloy by the formation of an Mg− organic molecular bond. <ref type="bibr" target="#b30">39,</ref><ref type="bibr" target="#b31">40</ref> The higher binding energy as shown in the present finding indicated a higher positive charge on Mg, which implies a higher population of Lewis acid sites on the magnesium alloy in the organic−inorganic coating. In Figure <ref type="figure" target="#fig_2">3</ref>, the spectra exhibited a lone peak at 70.8 and 74.2 eV of IC and IC-PPC2, respectively, indicating the formation of a crystallized MgAl 2 O 4 compound embedded in the IC. The shift of the Al 2p peak to a lower value in IC-PPC2 suggests variations in the electronic environment around the Al atom in the organic−inorganic bond. <ref type="bibr" target="#b28">36</ref> On the other hand, the two peak positions of the inorganic layer at 458.2 and 463.9 eV were attributed to Ti 2p 1/2 and Ti 2p 3/2 , indicating that the chemical state of the Ti element in the specimen was +4. <ref type="bibr" target="#b9">15</ref> Moreover, the spectrum of the organic−inorganic coating did not contain the Ti 2p 1/2 peaks, suggesting that IC was modified with PPC molecules. On the other hand, the B 1s spectrum of the IC has a strong component at high binding energy around 191.1 eV, whereas there is shift of the B 1s peak to higher binding energy with the new peak appearing at 184.2 eV. These findings may be due to charge effects resulting from the physical coordination of PPC molecules with the IC. For the IC, the binding energy of O 1s from 530 to 534 eV could be attributed to O in TiO 2 at 530.8 eV, MgO at 531.6 eV, and MgAl 2 O 4 at 532.5 eV. Meanwhile, the peaks observed at 531.6, 532.3, 533.1, and 533.5 eV in the XPS spectrum of O 1s in the organic− inorganic coating represent the TiO 2 , MgO, MgAl 2 O 4 , and CO (organic molecule), respectively. In addition, the peaks between 284 and 286 eV corresponded to C 1s in functional groups, demonstrating the presence of PPC in the organic coating. <ref type="bibr" target="#b31">40,</ref><ref type="bibr" target="#b26">34</ref> The other peaks around 399.5 and 403 eV correspond to azo groups, representing the presence of PPC molecules in the organic layer. The elemental composition, including Mg, Al, Ti, B, C, N, and O, are shown in Table <ref type="table" target="#tab_0">1</ref>. The content of C increased and the amount of Mg, Al, Ti, and B diminished after the chemical remedy, proposing an increase in the thickness of the organic layer on the treated specimen. It is noted that the C/Mg ratio of materials increased in the organic−inorganic coating after the AZ31 Mg alloy remedy. This finding showed that PPC molecules protected a high portion of the IC surface.</p><p>Quantum Chemical Analyses. Geometry optimization may conclude that the skeleton of the studied component was planar and phenyl groups were twisted depending on the supplementing OH or CH 3 group; on the other hand, the substituents also change the electronic properties of PPC. For the electronic properties, the lowest unoccupied molecular orbital (LUMO) and the highest occupied molecular orbital (HOMO) studied for PPC in vacuum, ethanol, and water forms are shown in Figure <ref type="figure" target="#fig_3">4</ref>. The calculated parameters such as the energies of the lowest unoccupied molecular orbital (E LUMO ) and the highest occupied molecular orbital energy (E HOMO ), ΔE = E LUMO − E HOMO , dipole moment (μ), global hardness (γ), electronegativity (X), and the number of transferred electrons (ΔN) are shown in Table <ref type="table">.</ref> 2. The value of E HOMO energy exhibits that organic molecules could easily donate electrons to the empty d-orbitals or p-orbitals of the metal atoms. <ref type="bibr" target="#b32">41</ref> On the contrary, E LUMO implies electron accepting ability from superficial metal. <ref type="bibr" target="#b33">42</ref> Moreover, the value of ΔE describes the stability of charge transfer complexes which determines the interaction between PPC and the inorganic surface. A low value of ΔE indicates high chemical reactivity and adsorption efficiency of the compound. <ref type="bibr" target="#b33">42</ref> The value of ΔN indicates the portion of electrons transferred from PPC to the inorganic coating surface. If ΔN &lt; 3.6, the absorption efficiency of organic molecule increases with increasing electron capability of the IC. <ref type="bibr" target="#b34">43,</ref><ref type="bibr" target="#b35">44</ref> Thus, ΔN is calculated using on the quantum chemical analysis and listed in Table <ref type="table" target="#tab_1">2</ref>. Therefore, the total dipole moment (μ) is a parameter characterizing the interaction between molecules. The deformability of molecules increase with the increase of μ, which increases the contact area between molecules and the surface of IC and the absorption ability of the organic compound. Table <ref type="table" target="#tab_1">2</ref> shows that the values of μ are very great, this shows that PPC is more easily adsorbed at the magnesium alloy surface to provide good inhibition ability. Moreover, an organic compound with low absolute electronegativity (χ) was associated with high electron donating tendency and therefore inhibited absorption efficiency on inorganic coating. In this study, almost similar structural trends of quantum chemical calculation indices were obtained for studied organic molecules in vacuum, ethanol, and water. From  the results shown in Table <ref type="table">.</ref> 2, it can be seen that water and ethanol molecules have higher electronegativity while the vacuum environment decreases electronegativity. In addition, the water and ethanol do not change the location of HOMO orbitals compared to molecules in the vacuum, demonstrating the electrostatic interaction between PPC and environment and the intramolecular charge transfer caused by dipolar interaction.</p><p>Electrochemistry Concept Test of Coatings Layers. The polarization curves for AZ31 Mg alloy in aggressive solution (3.5 wt % NaCl) at room temperature are presented in Figure <ref type="figure" target="#fig_4">5a</ref>, and the respective electrochemical parameters {i.e., corrosion current density (i corr ), corrosion potential (E corr ), anodic Tafel slope (β a ), cathodic Tafel slope (β c ), and inhibition efficiency (η)} derived from the corresponding Tafel plots are shown in Table <ref type="table">3</ref>. The inhibition efficiency (η) was determined by the equation developed in equation 2 in ref 15. It was apparent from Figure <ref type="figure" target="#fig_4">5a</ref> that regardless of the concentration of PPC, a remarkable drop in cathodic and anodic current densities occurred, demonstrating that PPC could effectively suppress cathodic hydrogen evolution reactions, anodic dissolution, and formation of a passive film on the magnesium surface. Moreover, the corrosion potential (E corr ) of IC-PPC1 and IC-PPC2 shifted toward the more positive side than IC, suggesting that this coating has better corrosion protection. Investigation of the data of Table <ref type="table">3</ref> shows that the displacements of the corrosion potential in the presence of PPC1 and PPC2 were both less than 85 mV, which consequently suggests that PPC acts as a mixed-type inhibitor.  </p><formula xml:id="formula_0">specimens E corr (V vs SCE) I corr (μA cm −2 ) β a (V dec −1 ) −β c (V dec −1 ) relative efficiency (%) IC −0.359 2.2 × 10 −1 281 × 10 −3 338 × 10 −3 IC-PPC1 −0.225 4.8 × 10 −2 325 × 10 −3 239 × 10 −3 78 IC-PPC2 −0.106 1.6 × 10 −2 601 × 10 −3 234 × 10 −3 93</formula><p>Furthermore, the values of β c and β a show only slight changes after the addition of PPC, indicating that the mechanism of the cathodic hydrogen evolution reaction and anodic magnesium alloy dissolution changed by the addition of PPC, so the inhibition may mainly occur by a blocking mechanism due to the adsorption of PPC on the IC surface. <ref type="bibr" target="#b36">45,</ref><ref type="bibr" target="#b37">46</ref> The value of η (as exhibited Table <ref type="table">3</ref>) was 78% for IC-PPC1, but this value reached 93% in IC-PPC2 due to the absorption effect of PPC on the inorganic surface. It is concluded that PPC molecules formed on IC were very protective and blocked the pores/ defects of the PE coating significantly. Electrochemical impedance spectroscopic (EIS) investigations of magnesium alloy in aggressive solution in the presence and absence of PPC at temperature of 25 °C were performed to verify the results of polarization experiments. Figure <ref type="figure" target="#fig_4">5b</ref> shows the corresponding EIS plots of the studied IC with and without PPC. As seen in Figure <ref type="figure" target="#fig_4">5b</ref>, these impedance spectra show a similar shape at all tested methods, which suggested that corrosion mechanism was not changed. Moreover, the diameter of arcs increases extraordinarily in the present of PPC compared with IC, demonstrating the high inhibitive ability of this compound. These results revealed the formation of PPC adsorption films on IC and their donation to the increasing anticorrosive quality. Besides, the shape of IC was similar to IC-PPC1 and IC-PPC2, revealing that the addition of the organic compound increased EIS but did not change the other electrochemical features of the solution, which could be attributed to the relatively looser PPC-adsorption layer. On the other hand, the interpretation of the EIS data for IC in the absence and presence of PPC in aggressive solution was performed by numerical fitting, using the equivalent circuit model illustrated in Figure <ref type="figure" target="#fig_4">5c</ref>. This model illustrated anticorrosion behavior of the AZ31 Mg alloy based on the EIS studies of Al Zoubi et al. <ref type="bibr" target="#b38">47</ref> of the PE process. Herein, R s stands the solution resistance, R 1 represents the resistance of adsorption film formed on IC, and CPE 1 is the constant phase angle element, which was related to the capacitance of IC; R 2 stands the contribution of inorganic layer (Figure <ref type="figure" target="#fig_4">5c</ref>), and the analogous capacitance is described by CPE 2 . R 3 and L describe the inductive impedance performance, where R 3 is the current transfer resistance and L showed anticorrosion performance at low frequencies. <ref type="bibr">48−50</ref> Table <ref type="table" target="#tab_2">4</ref> shows EIS fitting results collected from the equivalent circuits (ECs) and the experimental results formed from the impedance data. Table <ref type="table" target="#tab_2">4</ref> shows that the presence of PPC increases the corrosion resistance of the AZ31 Mg alloy. The result is enhanced with the increasing concentration of PPC, from which it could be inferred that PPC adsorption layers are made on IC and thus inhibit the process of charge transfer.</p><p>Figure <ref type="figure" target="#fig_4">5d</ref> shows the cyclic voltammogram (CV) results for pretreated magnesium specimens and the treated magnesium specimens in the potential range of −3 to 3 V (vs Ag/AgCl) at a potential scan rate of 5 mV s −1 . For the magnesium curve, one peak at −1.8 V could be attributed to the formation of MgO. On the other hand, the CV curves that were obtained for IC in aggressive solution show a relatively smaller peak for oxides of AZ31 Mg. This deceleration of the dissolution of magnesium ions was proven from the decrease in the anodic peak current. Moreover, these results confirm that the PE process could markedly improve the corrosion resistance on magnesium. However, passivation could occur by the formation of the Mg(OH) 2 layer on IC via microdefects. Since the films that form on the inorganic surface were dissolvable in aqueous solution, they do not provide long-term protection. <ref type="bibr" target="#b42">51</ref> On the other hand, in the presence of aggressive solution, these films (Mg(OH) 2 ) break down. <ref type="bibr">52−54</ref> For the hybrid of IC and PPC2,  the peaks of metal oxide almost vanished and the strong suppression in peak intensities shows that the combination of the inorganic and organic layers has given the maximum corrosion resistance to the metal surface. Furthermore, the generated cyclic voltammograms were devoid of significant oxidation or reduction peaks, indicating that the organic coating was undamaged and providing good protection for the underlying magnesium alloy surface. CV of IC-PPC2 coated AZ31 Mg alloy suggested that the organic coating was quite stable in the neutral NaCl solution in the investigated potential window and provided corrosion protection for the underlying magnesium.</p><p>It was worth noting that IC-PPC1 and IC-PPC2 gave better corrosion resistance for the AZ31 Mg alloy than that provided by IC alone. This was because the hierarchical flowerlike structures of IC-PPC1 and IC-PPC2 shown in Figure <ref type="figure" target="#fig_0">1</ref> have furrows in which more air could be confined. Moreover, the organic material surface became superhyrophobic by alteration of surface morphologies because micro-flower-shaped structures and secondary microsheets were valuable to the preparation of air pockets that stabilized the droplets. Furthermore, as seen in Table <ref type="table" target="#tab_2">4</ref>, a lower corrosion current density was observed on IC-PPC2 and IC-PPC2 surfaces relative to those of IC alone, implying greater corrosion resistance. In addition, we also formed a comparison with other studied anticorrosion superhyrophobic surfaces. For example, Xu's group <ref type="bibr" target="#b46">55</ref> reported a corrosion protection superhyrophobic AZ31 Mg alloy surface, but several microcracks that formed on the IC weakened the corrosion protection of the superhydrophobic surface. On the other hand, both EIS curves and electrochemical parameters measured from EIS indicated that the superhydrophobic surface could enhance the corrosion protection of the AZ31 Mg alloy significantly.</p><p>Morphology and Formation Mechanism of the Flowerlike PPC. Figure <ref type="figure" target="#fig_5">6a</ref> exhibits a schematic illustration describing the preparation method of the IC and flowerlike organic layer via PE process and DCC. The TEM image of the flowerlike organic structure is shown Figure <ref type="figure" target="#fig_5">6b</ref>, and Figure <ref type="figure" target="#fig_5">6c</ref> presents an HRTEM image of one petal of IC-PPC2. The organic chains were separated by approximately 0.25 nm as shown in Figure <ref type="figure" target="#fig_5">6c</ref>, this value clearly corresponds to a lattice vector of the PPC unit cell. In the field, we were not able to acquire diffractograms that could be clearly attributed to the mixed layers, because the layers were too narrow to dominate selected area diffraction and too sensitive to electron irradiation to target directly via nanobeam diffraction. On the other hand, we expected the upright-standing geometry to be favored by πstacking between the aromatic backbones of neighboring molecules, and additional π−π stacking effects could render the upright adsorption configuration more energetically favorable. Furthermore, molecules with an upright geometry could form intramolecular hydrogen bonds, stabilizing the structure further.</p><p>Finally, to compare the current data with the corrosion resistance of the magnesium alloys coated by other surface treatment methods, the electrochemical results obtained via other methods, such as organic coating, 56 inorganic coating, <ref type="bibr" target="#b48">57</ref> hybrid coating, 58−60 hydrothermal coating, <ref type="bibr" target="#b52">61</ref> dip-treatment, <ref type="bibr" target="#b53">62</ref> PE coating, 63−72 organic−inorganic coating, <ref type="bibr" target="#b64">73</ref> and solidified alloy, <ref type="bibr" target="#b65">74</ref> are explained in Figure <ref type="figure" target="#fig_5">6d</ref>. It was clear from Figure <ref type="figure" target="#fig_5">6d</ref> that the coating based on the present strategies utilizing the additional PPC working as an organic inhibitor exhibited the lowest value of i corr when compared to the other methods.</p><p>Moreover, the value of E corr of IC-PPC2 was more positive than those reported by others. The comparison of these results led to the conclusion that PE coating followed by DCC in PPC solution would provide excellent protective coating for magnesium-based alloys. It should be explained the present of PPC based organic coating, like IC-PPC2 on AZ31 Mg, exhibited a very comprehensive passive zone, demonstrating good corrosion protection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ CONCLUSION</head><p>The flowerlike organic structure grown on rough inorganic layer has been developed successfully by combining both plasma electrolysis and dip chemical coating. During dip chemical coating, the organic component of PPC tended to be precipitated onto the rough surface of IC formed by plasma electrolysis, which was attributed mainly to chemical−physical interactions. For the occurrence of the flowerlike morphologies, the self-assembly of PPC clusters was operative fully through noncovalent interactions, such as π−π interaction, van der Waals forces, and hydrogen bonding. The electrochemical assessments utilizing impedance and cyclic voltammetry tests revealed that the corrosion resistance of the hybrid organic− inorganic coating with flowerlike structures was improved remarkably due to synergistic effects of the protective IC itself and the organic compound to seal the microdefects present in the IC. The flowerlike organic−inorganic coating proposed here might possess extraordinary potential to induce multifunctional characteristics such as enlarged surface dimensions, giving rise to wide applications, such as catalysis, biosensing, and medical drug delivery. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>■ REFERENCES</head><p>(1) Ge, J.; Yin, Y. Magnetically tunable photonic structures in alkanol solutions. Adv. Mater. 2008, 20, 3485−3491.</p><p>(2) Caruso, F.; Caruso, R. A.; Moḧwald, H. Nanoengineering of inorganic and hybrid hollow spheres by colloidal templating. Science 1998, 282, 1111−1114.</p><p>( </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. SEM images showing the surface morphologies of the layers formed using different methods: (a−c) inorganic coating (IC) formed by PE at 100 mA cm −2 for 5 min; (d−f) organic−inorganic coating formed by PE method followed in DCC in PPC solution (1 M) for 1 day at ambient temperature; (g−i) organic−inorganic coating formed by the PE method followed in DCC in PPC solution (2 M) for 1 day at ambient temperature. (inset) High-magnification images of the flowerlike structure. To make the analogy to the flower more evident, we have also provided insets showing flowers in different concentrations of development.</figDesc><graphic coords="2,112.31,69.17,400.31,311.47" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Author: (a) Surface composition (at %) of the coating determined by EDS analysis. (b) FT-IR spectra analysis of coating layers IC, IC-PPC1, and IC-PPC2. The presence of the organic molecules in organic−inorganic coating is confirmed by the appearance of the O−H stretching bands at 3250 and 1246 cm −1 as well as NN stretching bands at 1364 cm −1 . (c) XRD spectra of coatings layers IC, IC-PPC1, and IC-PPC2. Cu Kα radiation was used as source. All of the coating layers constituted MgAl 2 O 4 and MgO with different ratios of relative peak intensity as well as organic compound. The individual peaks of Mg were from the metal substrate. (d) Survey XPS spectra of IC, IC-PPC1, and IC-PPC2; corresponding peaks of Mg, Al, Ti, B, C, and O.</figDesc><graphic coords="3,127.79,69.17,369.35,292.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Characterization of organic and inorganic coatings by high-resolution XPS. Normalized scans of the high-resolution Mg, Al, Ti, B, C, N, and O of IC and IC-PPC2, deconvoluted using prepared component fitting.</figDesc><graphic coords="4,116.16,69.17,392.60,237.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Computational studies. Shapes of (a) highest occupied molecular orbitals (HOMOs) calculated for neutral molecules in vacuum, ethanol, and water and (b) lowest unoccupied molecular orbitals (LUMOs) calculated for neutral molecules in vacuum, ethanol, and water using DFT/ B3LYP methodology.</figDesc><graphic coords="5,112.31,547.03,400.31,170.14" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Electrochemical behavior. (a) Potentiodynamic polarization curves of the present specimens treated by the PE method followed by DCC in PPC1 and PPC2 at ambient temperature. (b) Nyquist plots of the present specimens treated by the PE method followed by the DCC method in PPC1 and PPC2 at ambient temperature. (c) Equivalent circuit model consisting of two capacitive loops to describe the electrochemical characteristics of the organic and inorganic layers. An inductive loop was associated with corrosion products. (d) CV curves of IC and IC-PPC2 in 3.5 wt % NaCl solution at a scan rate of 5 mV s −1 . All electrochemical characterizations confirmed that the specimens treated in IC-PPC2 exhibited superior corrosion resistance owing to the role of PPC working as a corrosion inhibitor. Table 3. Potentiodynamic Polarization Parameters of the Specimens Treated in the Absence and Presence of Different Concentrations of PPC Measured from −0.3 to 0.3 V versus the Open Circuit Potential in 3.5 wt % NaCl Solution</figDesc><graphic coords="6,123.14,143.21,378.71,299.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Morphological characterization of flowerlike structure. (a) Schematic diagram underlying the core mechanism to describe the development of the organic−inorganic layers. (b) TEM images of flowerlike PPC. (c) HRTEM images of a single petal flowerlike PPC. (d) Comparison of E corr and i corr values of the AZ31 Mg alloy specimens treated by several surface modification methods.</figDesc><graphic coords="7,125.41,154.20,374.12,193.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>*</head><label></label><figDesc>Tel.: +82-53-810-2537. Fax: +82-53-810-4628. E-mail address: younggun@ynu.ac.kr (Y.G.K.). ORCID Wail Al Zoubi: 0000-0002-9959-1431 Notes The authors declare no competing financial interest. ■ ACKNOWLEDGMENTS W e a c k n o w l e d g e t h e R e s e a r c h P r o j e c t ( N R F -2017H1D2A2063357) and the First Research Grant (NRF-2017R1C1B5077139) of the National Research Foundation funded by the Ministry of Science and ICT, Republic of Korea. This is supported partly by Nano-Material Technology Development Program (2009-0082580).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Surface Atomic Concentration of the Elements Drawn from the XPS Data in the Absence and Presence of Different Concentrations of PPC</figDesc><table><row><cell>specimen</cell><cell>Mg</cell><cell>Al</cell><cell>Ti</cell><cell>B</cell><cell>C</cell><cell>N</cell><cell>O</cell></row><row><cell>IC</cell><cell>16.41</cell><cell>7.57</cell><cell>1.08</cell><cell>1.57</cell><cell></cell><cell></cell><cell>73.37</cell></row><row><cell>IC-PPC1</cell><cell>0.21</cell><cell>1.19</cell><cell>0.14</cell><cell>1.08</cell><cell>78.33</cell><cell>12.24</cell><cell>6.80</cell></row><row><cell>IC-PPC2</cell><cell>0.40</cell><cell>1.20</cell><cell>0.15</cell><cell>1.12</cell><cell>80.30</cell><cell>10.50</cell><cell>6.11</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Electronic Parameters Calculated for Neutral Organic Molecules in Vacuum, Ethanol, and Water</figDesc><table><row><cell>PPC</cell><cell>E HOMO (eV)</cell><cell>E LUMO (eV)</cell><cell>ΔE (eV)</cell><cell>μ (Debye)</cell><cell>A</cell><cell>I</cell><cell>X(eV)</cell><cell>γ (eV)</cell><cell>ΔN</cell></row><row><cell>molecule in vacuum</cell><cell>−5.741</cell><cell>−2.748</cell><cell>2.993</cell><cell>2.041</cell><cell>2.748</cell><cell>5.741</cell><cell>4.245</cell><cell>1.497</cell><cell>0.10</cell></row><row><cell>molecule in ethanol</cell><cell>−5.855</cell><cell>−2.934</cell><cell>2.921</cell><cell>2.762</cell><cell>2.934</cell><cell>5.855</cell><cell>4.395</cell><cell>1.456</cell><cell>0.12</cell></row><row><cell>molecule in water</cell><cell>−5.850</cell><cell>−2.939</cell><cell>2.911</cell><cell>2.797</cell><cell>2.939</cell><cell>5.850</cell><cell>4.395</cell><cell>1.456</cell><cell>0.12</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 .</head><label>4</label><figDesc>Electrochemical Impedance Parameters of the Specimens Treated in the Absence and Presence of Different Concentrations of PPC</figDesc><table><row><cell>specimens</cell><cell>R 1 (Ω•cm 2 )</cell><cell>R 2 (Ω•cm 2 )</cell><cell>R 3 (Ω•cm 2 )</cell><cell>CPE 1 -T</cell><cell>CPE 1 -P</cell><cell>CPE 2 -T</cell><cell>CPE 2 -P</cell><cell>L (H•cm −2 )</cell></row><row><cell>IC</cell><cell>8.10 × 10 3</cell><cell>4.43 × 10 5</cell><cell>8.86 × 10 4</cell><cell>2.63 × 10 −5</cell><cell>0.52</cell><cell>1.08 × 10 −7</cell><cell>0.95</cell><cell>5.47 × 10 3</cell></row><row><cell>IC-PPC1</cell><cell>9.85 × 10 3</cell><cell>4.55 × 10 5</cell><cell>1.92 × 10 5</cell><cell>4.74 × 10 −5</cell><cell>0.47</cell><cell>9.54 × 10 −8</cell><cell>0.94</cell><cell>4.74 × 10 4</cell></row><row><cell>IC-PPC2</cell><cell>2.85 × 10 4</cell><cell>1.73 × 10 5</cell><cell>3.83 × 10 5</cell><cell>9.46× −6</cell><cell>0.63</cell><cell>1.20 × 10 −7</cell><cell>0.85</cell><cell>1.76 × 10 4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>3) Lu, H.; Fei, B.; Xin, J. H.; Wang, R.; Li, L. Fabrication of UVblocking nanohybrid coating via miniemulsion polymerization. J. Colloid Interface Sci. 2006, 300 (1), 111−116. (4) Pitukmanorom, P.; Yong, T. H.; Ying, J. Y. Tunable release of proteins with polymers-inorganic nanocomposite microspheres. Adv. Mater. 2008, 20 (18), 3504−3509. (5) Zhang, N.; Yang, M. Q.; Liu, S.; Sun, Y.; Xu, Y. J. Waltzing with the versatile platform of graphene to synthesize composite photocatalysts. Chem. Rev. 2015, 115 (18), 10307−10377.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot">DOI: 10.1021/acssuschemeng.7b03870 ACS Sustainable Chem. Eng. 2018, 6, 3546−3555</note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Modular chemistry: secondary building units as a basis for the design of highly porous and robust metalorganic carboxylate frameworks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Eddaoudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Moler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Reineke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>O'keeffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">M</forename><surname>Yaghi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acc. Chem. Res</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="319" to="330" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Silica-based mesoporous organic-inorganic hybrid materials</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cornelius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Morell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Froba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Angew. Chem., Int. Ed</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="3216" to="3251" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Ordered porous materials for emerging applications</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Davis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">417</biblScope>
+			<biblScope unit="page" from="813" to="821" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">New rhodium complexes anchored on modified USY zeolites. A remarkable effect of the support on the enantioselectivity of catalytic hydrogenation of prochiral alkenes</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Corma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iglesias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Del Pino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sanchez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Soc., Chem. Commun</title>
+		<imprint>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="1253" to="1255" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">In support of the pore</title>
+		<author>
+			<persName><forename type="first">St</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">378</biblScope>
+			<biblScope unit="page" from="662" to="663" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Synthesis and characterization of new chiral Rh(I) complexes with N,N′-, and N, P-ligands. A study of anchoring on the modified zeolites and catalytic properties of heterogenized complexes</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Carmona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Corma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iglesias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>San Jose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sanchez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Organomet. Chem</title>
+		<imprint>
+			<biblScope unit="volume">492</biblScope>
+			<biblScope unit="page" from="11" to="21" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Functionalization of Y zeolites with organosilane reagents</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cauvel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brunel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Di Renzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Moreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fajula</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Stud. Surf. Sci. Catal</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="286" to="293" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Structural diversity of graphene materials and their multifarious roles inhetergeneous photocatalysis</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">J</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Today</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="372" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Heterostructured semiconductor nanowire arrays for artificial photosynthesis</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">R</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">J</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Horiz</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="270" to="282" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Hybrid organic-inorganic coatings via electron transfer behaviour</title>
+		<author>
+			<persName><forename type="first">Al</forename><surname>Zoubi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="7063" to="7080" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Determination of corrosion inhibition effects of amino acids: quantum chemical and molecular dynamic simulation study</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Tuzun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">B</forename><surname>Obot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Taiwan Inst. Chem. Eng</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="528" to="535" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Insights into corrosion inhibition behavior of multi-active compounds for X65 pipeline steel in acidic oilfield formation water</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page" from="43" to="58" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A new corrosion inhibitor for protection of low carbon steel in HCl solution</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Farsak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Keles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Keles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="page" from="223" to="232" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Investigation of ammonium (2,4-dimethylphenyl)-dithiocarbamate as a new, effective corrosion inhibitor for mild steel</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kıcır</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tansug</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Erbil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tuken</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page" from="88" to="99" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Evaluation of corrosion inhibition of mild steel in 0.1 M HCl by 4-amino-3-hydroxynaphthalene-1-sulphonic acid</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Yıldız</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Dogȃn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Dehri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="215" to="221" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Materials science: A nature solution to corrosion?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lyon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">427</biblScope>
+			<biblScope unit="page" from="406" to="407" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Study of different triazole derivative inhibitors to protect copper against pitting corrosion</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Qafsaoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Blanc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pebere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Srhiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Mankowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Jakab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Scully</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">959−966. (23)</title>
+				<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="667" to="670" />
+		</imprint>
+	</monogr>
+	<note>Nat. Mater</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Interaction of 12-aminododecanoic acid with a carbon steel surface: towards the development of &apos;green&apos; corrosion inhibitors</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghareba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Omanovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="2104" to="2113" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Anti-corrosive properties of xanthone on mild steel corrosion in sulphuric acid: Experimental and theoretical investigations</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">B</forename><surname>Obot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">O</forename><surname>Obi-Egbedi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">382−392. (26) Antonijevic, M. M.; Petrovic, B. M. B. Copper corrosion inhibitors. A review</title>
+				<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">2011</biblScope>
+			<biblScope unit="page" from="1" to="28" />
+		</imprint>
+	</monogr>
+	<note>Curr. Appl. Phys.</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Films formed on copper surface in chloride media in presence of azoles</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Antonijevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Milic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Petrovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1228" to="1237" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Inhibition of copper corrosion by 1,2,3-benzotriazole: a review</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Finsgar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Milosev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">2010</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="2737" to="2749" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Quinol-2-thione compounds as corrosion inhibitors for mild steel in acid solution</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Prabhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">V</forename><surname>Venkatesha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Shanbhag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Praveen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Kulkarni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Kalkhambkar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="issue">2−3</biblScope>
+			<biblScope unit="page" from="283" to="289" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Density-functional exchange-energy approximation with correct asymptotic behavior</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Becke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. A: At., Mol., Opt. Phys</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3098" to="3100" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Density-functional thermochemistry. III. The role of exact exchange</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Becke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="5648" to="5652" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Development of the colle-salvetti correlation-energy formula into a functional of the electron density</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Parr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B: Condens. Matter Mater. Phys</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="785" to="789" />
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Enrichment of anodic MgO layers with Ag nanoparticles for biomedical applications</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">S</forename><surname>Necula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Fratila-Apachitei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Berkani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Apachitei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Duszczyk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Sci.: Mater. Med</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="339" to="345" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Synergistic influence of inorganic oxides (ZrO 2 and SiO 2 ) with N 2 H 4 to protect composite coatings obtained via plasma electrolyte oxidation on Mg alloy</title>
+		<author>
+			<persName><forename type="first">Al</forename><surname>Zoubi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kamil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Chem. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="2372" to="2382" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Protein-inorganic hybrid nanoflowers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">N</forename><surname>Zare</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Nanotechnol</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="428" to="432" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Biosynthesis and characterization of silver nanoparticles prepared from two novel natural precursors by facile thermal decomposition methods</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alsaedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Goudarzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mousavi-Kamazani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bagheri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Salavati-Niasari</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="32539" to="32551" />
+		</imprint>
+	</monogr>
+	<note>A valuable biochar from poplar catkins with high adsorption capacity for both organic pollutants and inorganic heavy Metal Ions</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The synthesis of N 2 O 2 -Schiff base Ligand and bulk liquid membrane transport</title>
+		<author>
+			<persName><forename type="first">Al</forename><surname>Zoubi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kandil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Chebani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Arabian J. Chem</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="626" to="632" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Direct reform of graphite oxide electrodes by using ambient plasma for supercapacitor applications</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Jeong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Phys. Lett</title>
+		<imprint>
+			<biblScope unit="volume">686</biblScope>
+			<biblScope unit="page" from="49" to="54" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">An XPS study of the dispersion of MoO 3 on TiO 2 -ZrO 2 , TiO 2 -SiO 2 , TiO 2 -Al 2 O 3 , SiO 2 -ZrO 2 , and SiO 2 -TiO 2 -ZrO 2 mixed oxides</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Smirniotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Catal., A</title>
+		<imprint>
+			<biblScope unit="volume">211</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="19" to="30" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Influence of biomacromolecule DNA corrosion inhibitor on carbon steel</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zeng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="page" from="68" to="76" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Quraishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kluza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Makowska-Janusik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">O</forename><surname>Olasunkanmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Ebenso</surname></persName>
+		</author>
+		<title level="m">Corrosion inhibition of mild steel in</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Sulphonamides as corrosion inhibitor: Experimental and DFT studies</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Obayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Al-Amiery</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Alwan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">A</forename><surname>Abdullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A H</forename><surname>Kadhum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Mohamad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mol. Struct</title>
+		<imprint>
+			<biblScope unit="page" from="27" to="34" />
+			<date type="published" when="1138" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Experimental and theoretical studies of benzothiazole derivatives as corrosion inhibitors for carbon steel in 1 M HCl</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page" from="563" to="575" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Green Bronsted acid ionic liquids as novel corrosion inhibitors for carbon steel in acidic medium</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci</title>
+		<imprint/>
+	</monogr>
+	<note>Rep. 2017, 7, 8773−8788</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Experimental, quantum chemical and molecular dynamic simulations studies on the corrosion inhibition of mild steel by some carbazole derivatives</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">U</forename><surname>Nwankwo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">O</forename><surname>Olasunkanmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Ebenso</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="2436" to="2453" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Electron-donor and -acceptor agents responsible for surface modification optimizing electrochemical performance</title>
+		<author>
+			<persName><forename type="first">Al</forename><surname>Zoubi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kamil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">W</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Electron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Appl. Mater. Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">2017</biblScope>
+			<biblScope unit="issue">34</biblScope>
+			<biblScope unit="page" from="28967" to="28979" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A review of AC impedance modeling and validation in SOFC diagnosis</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">A</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochim. Acta</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">28</biblScope>
+			<biblScope unit="page" from="8144" to="8164" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Characterization and corrosion behavior of ceramic coating on magnesium by micro-arc oxidation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Durdu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aytac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Usta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Alloys Compd</title>
+		<imprint>
+			<biblScope unit="volume">509</biblScope>
+			<biblScope unit="issue">34</biblScope>
+			<biblScope unit="page" from="8601" to="8606" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Characterization and mechanical properties of coatings on magnesium by micro arc oxidation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Durdu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Usta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Surf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">261</biblScope>
+			<biblScope unit="page" from="774" to="782" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A new aspect of Chevrel compounds as positive electrodes for magnesium batteries</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ichitsubo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yagi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nakamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ichikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Okamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sugimura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kawaguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kitada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Oishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Doi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Matsubara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Chem. A</title>
+		<imprint>
+			<biblScope unit="volume">2014</biblScope>
+			<biblScope unit="issue">36</biblScope>
+			<biblScope unit="page" from="14858" to="11866" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Role of partially amorphous structure and alloying elements on the corrosion behavior of Mg-Zn-Ca bulk metallic glass for biomedical applications</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ramya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Sarwat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Udhayabanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Raj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Ravi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Des</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="829" to="835" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Phosphate ions as corrosion inhibitors for reinforcement steel in chloride-rich environments</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yohai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vaźquez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Valcarce</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochim. Acta</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="page" from="88" to="96" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Modification of tantalum surface via plasma electrolytic oxidation in silicate solutions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sowa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kazek-Kesik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Socha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dercz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Michalska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Simka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrochim. Acta</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page" from="627" to="636" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Rapid fabrication of large-area, corrosion-resistant superhydrophobic Mg alloy surfaces</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Appl. Mater. Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">2011</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4404" to="4414" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Hydroxyapatite coating of AZ31 magnesium alloy by a solution treatment and its corrosion behavior in NaCl solution</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hiromoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tomozawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Surf. Coat. Technol</title>
+		<imprint>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="4711" to="4719" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Formation mechanism, degradation behavior, and cytocompatibility of a nanorodshaped HA and poresealed MgO bilayer coating on magnesium</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Qi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Appl. Mater. Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="18258" to="18274" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Improving wear resistance and corrosion resistance of AZ31 magnesium alloy by DLC/ AlN/Al coating</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Surf. Coat. Technol</title>
+		<imprint>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2067" to="2073" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Design of magnesium alloys with controllable degradation for biomedical implants: From bulk to surface</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Yeung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Chu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Biomater</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<date type="published" when="2016-02-30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Composite magnesium phosphate coatings for improved corrosion resistance of magnesium AZ31 alloy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jayaraj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Raj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ananthakumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">T S</forename><surname>Pillai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">G K</forename><surname>Dhaipule</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">K</forename><surname>Mudali</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page" from="104" to="115" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Formation of a hydrophobic and corrosion resistant coating on magnesium alloy via a one-step hydrothermal method</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Colloid Interface Sci</title>
+		<imprint>
+			<biblScope unit="volume">505</biblScope>
+			<biblScope unit="page" from="87" to="95" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Neodymium-based conversion coating on AZ31 Magnesium Alloy. Rare Metal Materials and Engineering</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Dingzang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Dingfei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yuping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Guangshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Yinning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fusheng</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="289" to="295" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Effect of the graphene oxide additive on the corrosion resistance of the plasma electrolytic oxidation coating of the AZ31 magnesium alloy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page" from="146" to="155" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Evaluation of WEDM performance characteristics of Inconel 706 for turbine disk application</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chakradhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Narendranath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Des</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="558" to="566" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Corrosion protection performance of single and dual Plasma Electrolytic Oxidation (PEO) coating for aerospace applications</title>
+		<author>
+			<persName><forename type="first">Madhan</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">C</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">S</forename></persName>
+		</author>
+		<idno>149−150</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mater. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="page" from="480" to="486" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Effect of Ar bubbling during plasma electrolytic oxidation of AZ31B magnesium alloy in silicate electrolyte</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Chung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Surf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">259</biblScope>
+			<biblScope unit="page" from="454" to="459" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Electrochemical corrosion properties of CeO2-containing coatings on AZ31 magnesium alloys prepared by plasma electrolytic oxidation</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Ryu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Hong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="104" to="111" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Electrochemical performance of Si/graphite/carbon composite electrode in mixed electrolytes containing LiBOB and LiPF6</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Z</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">L</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electrochem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">156</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="A294" to="A298" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Further search for selectivity of positron annihilation in the skin and cancerous systems</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><forename type="middle">;</forename><surname>Chakka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Gadzia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohdaira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Oshima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">C</forename><surname>Jean</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Surf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">255</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="115" to="118" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Effect of lanthanum nitrate on the microstructure and electrochemical behavior of PEO coatings on AZ31 Mg alloy</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Toorani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Aliofkhazraei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Golabadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Rouhaghdam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Alloys Compd</title>
+		<imprint>
+			<biblScope unit="volume">719</biblScope>
+			<biblScope unit="page" from="242" to="255" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Cerium-and phosphatebased sealing treatments of PEO coated AZ31 Mg alloy</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Phuong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Fazal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Moon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Surf. Coat. Technol</title>
+		<imprint>
+			<biblScope unit="volume">309</biblScope>
+			<biblScope unit="page" from="86" to="95" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Structural, tribological and electrochemical behavior of SiC nanocomposite oxide coatings fabricated by plasma electrolytic oxidation (PEO) on AZ31 magnesium alloy</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">N</forename><surname>Nasiri Vatan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ebrahimi-Kahrizsangi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kasiri-Asgarani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Alloys Compd</title>
+		<imprint>
+			<biblScope unit="volume">683</biblScope>
+			<biblScope unit="page" from="241" to="255" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Effects of combined organic and inorganic corrosion inhibitors on the nanostructure cerium based conversion coating performance on AZ31 magnesium alloy: Morphological and corrosion studies</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Saei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ramezanzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Amini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Kalajahi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page" from="186" to="200" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Microstructure and corrosion resistance of directionally solidified Mg-2 wt.% Zn alloy</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Corros. Sci</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="page" from="75" to="81" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

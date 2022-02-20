@@ -1,6 +1,5 @@
 from fake_useragent import FakeUserAgent
 import requests as r
-import requests_html as rh
 
 
 def create_user_agent() -> str:
