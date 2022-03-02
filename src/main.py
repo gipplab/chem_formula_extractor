@@ -1,6 +1,15 @@
-from hyplag_backend import *
+from hyplag_backend import (
+    process_documents_grobid,
+    get_current_token,
+    post_document,
+    get_document,
+    save_xml_doc,
+)
 from parser import clean_xml, TeiXmlReader
 from pubchem import search_pubchem
+from pathlib import Path
+from definitions import PDF_FILES
+from utils import create_session
 
 
 def process_pdf(pdf_name: str):
@@ -15,22 +24,41 @@ def process_pdf(pdf_name: str):
     xml_root = clean_xml(xml_name)
     cde_document = TeiXmlReader().parse(xml_root)
     chemical_list = []
-    for chem in cde_document.records:
+    session = create_session()
+    cid_list = []
+    for chem in cde_document.records.serialize():
         chemical = []
-        cid_list = []
         # Extracted chemical compounds
-        chem_names = chem.serialize()
-        chemical.append(chem_names)
+        compound = chem.get("Compound")
+        if compound:
+            chem_names = compound.get("names")
+            if not chem_names:
+                continue
+        else:
+            continue
+
         for name in chem_names:
             # Further information from pubchem
-            compound = search_pubchem(name)
-            cid = compound[1][0]
-            if cid in cid_list:
+            temp_name = name.replace(".", ",")
+            temp_name = temp_name.replace(" ", "")
+            compound_properties = search_pubchem(temp_name, session)
+            if compound_properties:
+                compound_properties[0][1]["elements"] = list(
+                    set(compound_properties[0][1]["elements"])
+                )
+                iupac_name = compound_properties[0][1]["iupac_name"]
+                if iupac_name:
+                    compound_properties[0][1]["iupac_name"] = iupac_name.replace(";", " ")
+                cid = compound_properties[0][1]["cid"]
+                if cid in cid_list:
+                    continue
+                cid_list.append(cid)
+                chemical.extend(list(compound_properties[0][1].values()))
+                chemical.append(compound_properties[0][2])
+            else:
                 continue
-            cid_list.apppend(cid)
-            for item in compound:
-                chemical.append(item)
-        chemical_list.append(chemical)
+        if chemical:
+            chemical_list.append(chemical)
     return chemical_list
 
 

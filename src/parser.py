@@ -1,13 +1,13 @@
-from chemdataextractor.doc import meta
 from lxml import etree
-from definitions import *
+from definitions import XML_FILES
 import logging
 from collections import defaultdict
-from chemdataextractor.doc import Document, Table, Paragraph, Text, Figure, Heading, Caption, Title
+from chemdataextractor.doc import Document, Table, Figure, Heading, Caption, Title
 from chemdataextractor.scrape.clean import Cleaner
 from chemdataextractor.reader.markup import LxmlReader
 from chemdataextractor.doc.meta import MetaData
 from chemdataextractor.errors import ReaderError
+from chemdataextractor.model import Compound
 from lxml.etree import XMLParser
 
 NAMESPACE: str = "{http://www.tei-c.org/ns/1.0}"
@@ -173,7 +173,7 @@ class TeiXmlReader(LxmlReader):
         #    specials[citation] = self._parse_text(citation, element_cls=Citation, refs=refs, specials=specials)
         specials[md[0]] = self._parse_metadata(root)
         elements = self._parse_element(root, specials=specials, refs=refs)
-        return Document(*elements)
+        return Document(*elements, models=[Compound])
 
 
 if __name__ == "__main__":

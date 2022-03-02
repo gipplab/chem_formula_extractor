@@ -1,11 +1,11 @@
 import pubchempy as pcp
 import requests as r
 from typing import Any, List, Dict, Tuple
-from utils import *
+from utils import create_session
 import base64
 
 
-PROPERTIES: List[str] = ["cid", "elements", "molecular_weight", "molecular_formula"]
+PROPERTIES: List[str] = ["iupac_name", "cid", "elements", "molecular_weight", "molecular_formula"]
 PUBCHEM_COMPOUND_URL: str = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/"
 
 
@@ -19,16 +19,19 @@ def get_structure_img(cid: int, session: r.Session) -> str:
     Returns:
         str: Base64 encoded string of the image
     """
-    response = session.get(url=f"{PUBCHEM_COMPOUND_URL}{str(cid)}/PNG")
-    img = str(base64.b64encode(response.content))[3:-1]
+    try:
+        response = session.get(url=f"{PUBCHEM_COMPOUND_URL}{str(cid)}/PNG")
+        img = str(base64.b64encode(response.content))[3:-1]
+    except:
+        return None
     return img
 
 
 def search_pubchem(
     search_term: str, session: r.Session, num_results_used: int = 1
 ) -> List[Tuple[List[str], Dict[str, Any], str]]:
-    """Search PubChem with the search term and extract chemical properties (specified
-       in PROPERTIES), five relavant synonyms and the 2D structure of the compounds found.
+    """Search PubChem with search term and extract chemical properties (specified
+       in PROPERTIES), specified number of relavant synonyms and the 2D structure of the compounds found.
 
     Args:
         search_term (str): Search term to use for searching PubChem database
@@ -36,7 +39,7 @@ def search_pubchem(
         num_results_used (int, optional): Number of search results to consider. Defaults to 1.
 
     Returns:
-        List[Tuple[List[str], Dict[str, Any], str]]: List of compounds consisting of: (snyonyms, properties, image)
+        List[Tuple[List[str], Dict[str, Any], str]]: List of compounds, each element consisting of: (snyonyms, properties, image)
     """
     compound_list: List[Tuple[List[str], Dict[str, Any], str]] = []
     search_results = pcp.get_compounds(search_term, "name")[0:num_results_used]
