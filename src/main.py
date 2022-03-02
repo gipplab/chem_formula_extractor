@@ -10,9 +10,22 @@ from pubchem import search_pubchem
 from pathlib import Path
 from definitions import PDF_FILES
 from utils import create_session
+from typing import List, Any
 
 
-def process_pdf(pdf_name: str):
+CID_INDEX: int = 1
+
+def process_pdf(pdf_name: str) -> List[Any]:
+    """Processes the input pdf file and extracts all chemical entities.
+
+    Args:
+        pdf_name (str): Name of the pdf file in PDF_FILES folder
+
+    Returns:
+        List[List[Any]]: List of chemical entities. Each element consists of:
+                         [Iupac name, CID, List of Atoms, Molecule Weight, Molecular Formula, 
+                          Base64 encoded image of molecular structure]
+    """
     try:
         process_documents_grobid(Path(PDF_FILES + pdf_name))
     except:
@@ -36,12 +49,12 @@ def process_pdf(pdf_name: str):
                 continue
         else:
             continue
-
         for name in chem_names:
             # Further information from pubchem
             temp_name = name.replace(".", ",")
             temp_name = temp_name.replace(" ", "")
             compound_properties = search_pubchem(temp_name, session)
+
             if compound_properties:
                 compound_properties[0][1]["elements"] = list(
                     set(compound_properties[0][1]["elements"])
@@ -56,10 +69,33 @@ def process_pdf(pdf_name: str):
                 chemical.extend(list(compound_properties[0][1].values()))
                 chemical.append(compound_properties[0][2])
             else:
+                # If no results form pubchem, skipp the chemical entity
                 continue
         if chemical:
             chemical_list.append(chemical)
     return chemical_list
+
+def compare_documents(source_pdf: str, recommendation_pdf: str) -> List[List[Any]]:
+    """Compares chemical entities of two scientific papers. Returns
+    their chemical entities and the indexes for the same entities.
+
+    Args:
+        source_pdf (str): Source pdf file for comparison
+        recommendation_pdf (str): Target pdf file for comparison
+
+    Returns:
+        List[List[Any]]: [Chemical entities of source document, Chemical entities of target document,
+                          Index pairs for same entities [i, j]]
+    """
+    index_list: List[List[int]] = []
+    source_chemical_list = process_pdf(source_pdf)
+    recommendation_chemical_list = process_pdf(recommendation_pdf)
+    for i, source_chemical in enumerate(source_chemical_list):
+        for j, recommendation_chemical in enumerate(recommendation_chemical_list):
+            if source_chemical[CID_INDEX] == recommendation_chemical[CID_INDEX]:
+                index_list.append([i, j])
+                break
+    return source_chemical_list, recommendation_chemical_list, index_list
 
 
 if __name__ == "__main__":

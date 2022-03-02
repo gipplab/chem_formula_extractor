@@ -2,7 +2,9 @@ import os
 import requests
 from typing import Dict, List, Tuple
 from pathlib import Path
-from definitions import *
+from definitions import (TOKEN, HYPLAG_USER, HYPLAG_PASSWORD, HYPLAG_BACKEND_AUTH_TOKEN, HYPLAG_ID, 
+                        HYPLAG_BACKEND_POST_DOCUMENT, HYPLAG_BACKEND_GET_DOCUMENT, XML_FILES, 
+                        PDF_FILES)
 from glob import glob
 from datetime import datetime, timedelta
 from grobid_client.grobid_client import GrobidClient
