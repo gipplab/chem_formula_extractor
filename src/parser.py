@@ -1,5 +1,7 @@
+from xml.etree.ElementTree import ElementTree
 from lxml import etree
 from definitions import XML_FILES
+from typing import List
 import logging
 from collections import defaultdict
 from chemdataextractor.doc import Document, Table, Figure, Heading, Caption, Title
@@ -14,6 +16,14 @@ NAMESPACE: str = "{http://www.tei-c.org/ns/1.0}"
 
 
 def clean_xml(xml_file: str) -> etree.ElementTree:
+    """Cleans the xml file from namespace urls
+
+    Args:
+        xml_file (str): XML file in directory XML_FILES
+
+    Returns:
+        etree.ElementTree: Opened xml file with remove namespace urls 
+    """
     with open(XML_FILES + xml_file, "rb") as file:
         xml_doc = file.read()
         xml_tree = etree.fromstring(xml_doc)
@@ -30,6 +40,20 @@ def clean_xml(xml_file: str) -> etree.ElementTree:
 
 
 class TeiXmlReader(LxmlReader):
+    """Reader for xml files, which follow the TEI standard (grobid, hyplag).
+
+    Args:
+        LxmlReader : _description_
+
+    Raises:
+        ReaderError: _description_
+
+    Returns:
+        _type_: _description_
+    """
+    # Xpath expressions for different document elements
+    main_document_body = ".//body"
+
     metadata_xpath = "//fileDesc"
     metadata_title_xpath = ".//titleStmt/title"
     metadata_date_xpath = ".//publicationStmt/date"
@@ -49,17 +73,36 @@ class TeiXmlReader(LxmlReader):
 
     references_text_xpath = "//div//*//ref[contains(@target, '#b')]"
     references_bibliography_xpath = "//bibleStruct"
-
+    # Cleaner for removing references without proper id
     cleaner = Cleaner(kill_xpath="//div//*//ref[contains(@target, '#b')]")
 
-    def _parse_reference(self, el):
+    def _parse_reference(self, el) -> int:
+        """Parse reference id.
+
+        Args:
+            el (xml element): Reference xml element, for example <ref type="bibr" target="#b0">
+
+        Returns:
+            int: Bibliography number
+        """
         bib_id: str = el.get("target")
         if bib_id:
+            # Remove #b
             bib_id = [int(bib_id[2:])]
             return bib_id
         return 1000
 
-    def _parse_figure(self, el, refs, specials):
+    def _parse_figure(self, el, refs, specials) -> List[Figure]:
+        """Parse a figure to a CDE figure object.
+
+        Args:
+            el (xml element): Root xml element
+            refs : References, which are child elements of el
+            specials (dict): Dictionary of already created object
+
+        Returns:
+            List[Figure]: [CDE figure object]
+        """
         caps = self._xpath(self.figures_caption_xpath, el)
         label = self._xpath(self.figures_label_xpath, el)
         caption = (
@@ -73,7 +116,17 @@ class TeiXmlReader(LxmlReader):
     def _parse_table_rows(self, els, refs, specials):
         hdict = {}
 
-    def _parse_table(self, el, refs, specials):
+    def _parse_table(self, el, refs, specials) -> List[Table]:
+        """Parse a table to a CDE table object.
+
+        Args:
+            el (xml element): Root xml element
+            refs : References, which are child elements of el
+            specials (dict): Dictionary of already created objects
+
+        Returns:
+            List[Table]: [CDE table object]
+        """
         caps = self._xpath(self.figures_caption_xpath, el)
         caption = (
             self._parse_text(caps[0], refs=refs, specials=specials, element_cls=Caption)[0]
@@ -83,7 +136,14 @@ class TeiXmlReader(LxmlReader):
         table = Table(caption, table_data=None)
         return [table]
 
-    def _parse_authors(self, el):
+    def _parse_authors(self, el) -> List[str]:
+        """Parse the xml element, which contains the authors, into a list of author names
+
+        Args:
+            el (xml element): Root xml element
+        Returns:
+            List[str]: List of author names
+        """
         author_list = []
         for author in self._xpath(self.metadata_authors_xpath, el):
             name = ""
@@ -94,7 +154,15 @@ class TeiXmlReader(LxmlReader):
             author_list.append(name)
         return author_list
 
-    def _parse_metadata(self, el):
+    def _parse_metadata(self, el) -> List[MetaData]:
+        """Parses the medata of xml element into CDE Metadata object.
+
+        Args:
+            el (xml element): Root xml element
+
+        Returns:
+            List[MetaData]: [Metadataobject]
+        """
         title = self._xpath(self.metadata_title_xpath, el)
         authors = self._parse_authors(el)
         publisher = None
@@ -127,11 +195,30 @@ class TeiXmlReader(LxmlReader):
         meta = MetaData(metadata)
         return [meta]
 
-    def _make_tree(self, fstring):
+    def _make_tree(self, fstring: str) -> ElementTree:
+        """Create xml tree from string
+
+        Args:
+            fstring (str): XML string
+
+        Returns:
+            ElementTree: XML tree
+        """
         root = etree.fromstring(fstring, parser=XMLParser(recover=True))
         return root
 
-    def parse(self, file):
+    def parse(self, file) -> Document:
+        """Parse a xml file into a CDE document
+
+        Args:
+            file: XML string
+
+        Raises:
+            ReaderError: XML could not be read
+
+        Returns:
+            Document: CDE document
+        """
         if type(file) == etree._Element:
             root = file
         else:
@@ -172,11 +259,12 @@ class TeiXmlReader(LxmlReader):
         # for citation in citations:
         #    specials[citation] = self._parse_text(citation, element_cls=Citation, refs=refs, specials=specials)
         specials[md[0]] = self._parse_metadata(root)
+        root = self.root.find(self.main_document_body)
         elements = self._parse_element(root, specials=specials, refs=refs)
         return Document(*elements, models=[Compound])
 
 
 if __name__ == "__main__":
     root = clean_xml("acssuschemeng.7b03870.tei.xml")
-    print(type(root))
-    tei = TeiXmlReader()
+    hans = root.find(".//body")
+    print("test")

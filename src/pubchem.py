@@ -43,6 +43,11 @@ def search_pubchem(
     """
     compound_list: List[Tuple[List[str], Dict[str, Any], str]] = []
     search_results = pcp.get_compounds(search_term, "name")[0:num_results_used]
+    if not search_results:
+        try:
+            search_results = pcp.get_compounds(search_term, "formula")[0:num_results_used]
+        except:
+            pass
     for compound in search_results:
         properties: Dict[(str, Any)] = compound.to_dict(properties=PROPERTIES)
         synonyms: List[str] = compound.synonyms[0:5]

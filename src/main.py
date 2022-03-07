@@ -51,37 +51,46 @@ def process_pdf(pdf_name: str) -> List[Any]:
             continue
         for name in chem_names:
             # Further information from pubchem
-            temp_name = name.replace(".", ",")
-            temp_name = temp_name.replace(" ", "")
+            temp_name = name
             compound_properties = search_pubchem(temp_name, session)
+            if not compound_properties and "." in temp_name:
+                compound_properties = search_pubchem(temp_name.replace(".", ","), session)
+            if not compound_properties and " " in temp_name:
+                compound_properties = search_pubchem(temp_name.replace(" ", ""), session)
 
             if compound_properties:
-                compound_properties[0][1]["elements"] = list(
-                    set(compound_properties[0][1]["elements"])
-                )
-                iupac_name = compound_properties[0][1]["iupac_name"]
-                if iupac_name:
-                    compound_properties[0][1]["iupac_name"] = iupac_name.replace(";", " ")
+                # If chemical is already extracted skip it
                 cid = compound_properties[0][1]["cid"]
                 if cid in cid_list:
                     continue
+                # Set of elements
+                compound_properties[0][1]["elements"] = list(
+                    set(compound_properties[0][1]["elements"])
+                )
+                # Name 
+                iupac_name = compound_properties[0][1]["iupac_name"]
+                if iupac_name:
+                    compound_properties[0][1]["iupac_name"] = iupac_name.replace(";", " ")
                 cid_list.append(cid)
                 chemical.extend(list(compound_properties[0][1].values()))
+                # Use extracted name if no iupac name avaiable
+                if compound_properties[0][1]["iupac_name"] is None:
+                    chemical[0] = name
                 chemical.append(compound_properties[0][2])
             else:
-                # If no results form pubchem, skipp the chemical entity
+                # If no results form pubchem, skip the chemical entity
                 continue
-        if chemical:
-            chemical_list.append(chemical)
+            if chemical:
+                chemical_list.append(chemical)
     return chemical_list
 
 def compare_documents(source_pdf: str, recommendation_pdf: str) -> List[List[Any]]:
     """Compares chemical entities of two scientific papers. Returns
-    their chemical entities and the indexes for the same entities.
+    their chemical entities and the indexes of same entities.
 
     Args:
-        source_pdf (str): Source pdf file for comparison
-        recommendation_pdf (str): Target pdf file for comparison
+        source_pdf (str): Source pdf file of comparison
+        recommendation_pdf (str): Target pdf of for comparison
 
     Returns:
         List[List[Any]]: [Chemical entities of source document, Chemical entities of target document,

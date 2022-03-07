@@ -13,6 +13,16 @@ ACS_PAGE_SIZE: str = "&pageSize="
 
 
 def download_pdf(download_url: str, path_to_save: PDF_FILES, session: r.Session) -> bool:
+    """Download pdf file and save it.
+
+    Args:
+        download_url (str): URL to pdf file
+        path_to_save (PDF_FILES): Save directory
+        session (r.Session): Requests session object
+
+    Returns:
+        bool: _description_
+    """
     save_name = download_url.split("/")[-1]
     try:
         request = session.get(url=download_url)
@@ -26,6 +36,17 @@ def download_pdf(download_url: str, path_to_save: PDF_FILES, session: r.Session)
 def search_and_download_acs(
     search_string: str, num_papers: int, page_size: int = 100, num_threads: int = 10
 ) -> int:
+    """Search and download a number of papers from https://pubs.acs.org/ to PDF_FILES.
+
+    Args:
+        search_string (str): Search string.
+        num_papers (int): Number of papers to download.
+        page_size (int, optional): Size of search page. Defaults to 100.
+        num_threads (int, optional): Number of threads. Defaults to 10.
+
+    Returns:
+        int: Number of downloaded scientific papers.
+    """
     session = create_session()
     paper_url_list: List[str] = []
     num_papers_downloaded: int = 0
